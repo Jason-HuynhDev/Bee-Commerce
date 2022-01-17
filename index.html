@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="products.css">
+        <script defer type='module' src='script.js' ></script>
+        <title>Bee-Commerce</title>
+    </head>
+    <body>
+        <nav class='navbar' >
+            <div class='brand-title'>Bee-Commerce</div>
+            <!-- small-screen-display -->
+            
+            <div class='dropdown small-window' data-dropdown>
+                <a data-dropdown-button href="#" class='toggle-button'>
+                    <span data-dropdown-button class='bar'></span>
+                    <span data-dropdown-button class='bar'></span>
+                    <span data-dropdown-button class='bar'></span>  
+                </a>
+                <div  class='dropdown-navbar links'>
+                    <ul >
+                        <li><a href='index.html'>Home</a></li>
+                        <li><a href='about.html'>About</a></li>
+                        <li><a href='products.html'>Products</a></li>
+                        <li><a href='#'>Contact</a></li>
+                    </ul>
+                </div>    
+            </div>
+    
+            <div data-dropdown data-cart class='parent-cart-container dropdown small-window'>
+                <a data-cart class='shopping-cart-dropdown countdown-container' href="#">
+                    <img data-dropdown-button src="./imgs/hive-icon.svg" alt="bee-icon">
+                    <div data-dropdown-button data-cart-quantity class="cart-counter"></div>
+                </a>
+                <div class='shoppingcart-container'>
+                    <div data-cart-container class='inner-container'>
+    
+                    </div>
+                    <div class='cart-total'>
+                            <span>Total</span>
+                            <span data-cart-total></span>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- large-screen-display -->
+            <div class='navbar-links'>
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li><a href='products.html'>Products</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                </ul>   
+        </nav>
+        
+        <!-- hero section -->
+        <section class='hero'>
+            <div class='hero-text'>
+                <h1>Grab The Best!</h1>
+                <p>We supply you with the best bees,<br/> honey, and beekeeping tools and accessories.</p>
+            </div>
+        </section>
+
+        <section class='first-landing-product'>
+            <h2>Alveare Hive 1</h2>
+            <div class='landing-product-item'>
+                <svg width="100%" height="40vh" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="none"/>
+                    <path 
+                        fill-rule="evenodd" 
+                        clip-rule="evenodd" 
+                        d="M17.9343 5.6488C16.7805 5.18728 15.9339 4.81765 15.2386 4.5141C14.9152 4.37292 14.6246 4.24604 14.351 4.13085C13.5503 3.79371 12.8125 3.51538 12 3.51538C11.1875 3.51538 10.4497 3.79371 9.64901 4.13084C9.37543 4.24604 9.08478 4.37293 8.76139 4.51411C8.0661 4.81766 7.21946 5.18728 6.06568 5.6488C5.46146 5.89049 5.11375 6.52694 5.23681 7.16596C5.35988 7.80498 5.9191 8.26678 6.56986 8.26678H17.4301C18.0809 8.26678 18.6401 7.80498 18.7632 7.16596C18.8863 6.52694 18.5385 5.89049 17.9343 5.6488ZM3.85478 9.62429C3.10504 9.62429 2.49725 10.2321 2.49725 10.9818C2.49725 11.7316 3.10504 12.3394 3.85478 12.3394H20.1452C20.895 12.3394 21.5028 11.7316 21.5028 10.9818C21.5028 10.2321 20.895 9.62429 20.1452 9.62429H3.85478ZM2.49725 13.6969C1.7475 13.6969 1.13971 14.3047 1.13971 15.0544C1.13971 15.8042 1.7475 16.412 2.49725 16.412H10.0796C10.3591 15.6211 11.1134 15.0545 12 15.0545C12.8866 15.0545 13.6409 15.6211 13.9204 16.412H21.5028C22.2525 16.412 22.8603 15.8042 22.8603 15.0544C22.8603 14.3047 22.2525 13.6969 21.5028 13.6969H2.49725ZM10.0796 17.7695C10.3591 18.5604 11.1134 19.1271 12 19.1271C12.8866 19.1271 13.6409 18.5604 13.9204 17.7695H20.1452C20.895 17.7695 21.5028 18.3773 21.5028 19.1271C21.5028 19.8768 20.895 20.4846 20.1452 20.4846H3.85478C3.10504 20.4846 2.49725 19.8768 2.49725 19.1271C2.49725 18.3773 3.10504 17.7695 3.85478 17.7695H10.0796Z" 
+                        fill="black"
+                    />
+                </svg>
+            </div>
+            <div class='landing-btn-container'>
+                <a href='products.html'><button class='btn'> Learn More</button></a>
+            </div>
+        </section>
+
+        <div class="reviews-container">
+            <div class='reviews' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sint nulla totam</div>
+            <div class='reviews' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sint nulla totam</div>
+            <div class='reviews' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sint nulla totam</div>
+            <div class='reviews' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sint nulla totam</div>
+        </div>
+        <footer>
+            <div class='brand-title'>Bee-Commerce</div>
+            <div class='footer-links'>
+                <a href="#">Locations</a>
+                <a href="#">Careers</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class='footer-links'>
+                <a href="#">Facebook</a>
+                <a href="#"> Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Youtube</a>
+            </div>
+        </footer>
+
+        <!-- template -->
+        <template id='cart-product-template'>
+            <div data-product class='shoppingcart-layout'>
+                <div>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" fill="none"/>
+                        <path 
+                            data-hive-color
+                            fill-rule="evenodd" 
+                            clip-rule="evenodd" 
+                            d="M17.9343 5.6488C16.7805 5.18728 15.9339 4.81765 15.2386 4.5141C14.9152 4.37292 14.6246 4.24604 14.351 4.13085C13.5503 3.79371 12.8125 3.51538 12 3.51538C11.1875 3.51538 10.4497 3.79371 9.64901 4.13084C9.37543 4.24604 9.08478 4.37293 8.76139 4.51411C8.0661 4.81766 7.21946 5.18728 6.06568 5.6488C5.46146 5.89049 5.11375 6.52694 5.23681 7.16596C5.35988 7.80498 5.9191 8.26678 6.56986 8.26678H17.4301C18.0809 8.26678 18.6401 7.80498 18.7632 7.16596C18.8863 6.52694 18.5385 5.89049 17.9343 5.6488ZM3.85478 9.62429C3.10504 9.62429 2.49725 10.2321 2.49725 10.9818C2.49725 11.7316 3.10504 12.3394 3.85478 12.3394H20.1452C20.895 12.3394 21.5028 11.7316 21.5028 10.9818C21.5028 10.2321 20.895 9.62429 20.1452 9.62429H3.85478ZM2.49725 13.6969C1.7475 13.6969 1.13971 14.3047 1.13971 15.0544C1.13971 15.8042 1.7475 16.412 2.49725 16.412H10.0796C10.3591 15.6211 11.1134 15.0545 12 15.0545C12.8866 15.0545 13.6409 15.6211 13.9204 16.412H21.5028C22.2525 16.412 22.8603 15.8042 22.8603 15.0544C22.8603 14.3047 22.2525 13.6969 21.5028 13.6969H2.49725ZM10.0796 17.7695C10.3591 18.5604 11.1134 19.1271 12 19.1271C12.8866 19.1271 13.6409 18.5604 13.9204 17.7695H20.1452C20.895 17.7695 21.5028 18.3773 21.5028 19.1271C21.5028 19.8768 20.895 20.4846 20.1452 20.4846H3.85478C3.10504 20.4846 2.49725 19.8768 2.49725 19.1271C2.49725 18.3773 3.10504 17.7695 3.85478 17.7695H10.0796Z" 
+                            fill="#EB9605"
+                        />
+                    </svg>    
+                </div>
+                <div>
+                    <div>
+                        <h2 data-name>hive name</h2>
+                        <span data-quantity></span>
+                        <span data-price></span>  
+                        <button data-remove-from-cart-button class='cartBtn'>&times;</button>
+                    </div>
+                </div>
+                
+            </div>
+        </template>
+
+    </body>
+</html>

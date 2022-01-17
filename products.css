@@ -1,0 +1,152 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shoppingcart-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1rem;
+    top: calc(100% + .25rem);
+    min-width: 10rem;
+    max-height: 30rem;
+    border-radius: .5rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    background-color: seagreen;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    overflow-y: scroll;
+}
+
+.shoppingcart-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown.active > .shopping-cart-dropdown + .shoppingcart-container {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+/* Products Container */
+.products-container h1 {
+    text-align: center;
+}
+.hive-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.individual-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+    max-width: 18rem;
+}
+
+.cartBtn {
+    border: none;
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* about page */
+
+.about-img {
+    width: auto;
+    height: 35vh;
+    background-image: url('./imgs/pexels-david-hablützel-971355.jpg');
+}
+
+.blurb-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.blurb-1 h2 {
+    font-size: 3rem;
+    color: #eb9605;
+}
+
+.blurb-1 p {
+    max-width: 80vw;
+}
+
+.blurb-2 {
+    display: flex;
+    margin: 1rem;
+}
+
+.blurb-2-img {
+    background-image: url('./imgs/pexels-pixabay-207189.jpg');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    min-width: 50vw;
+    min-height: 50vh;
+    border-radius: 1rem;
+}
+
+.blurb-2-text {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.blurb-2-text h3{
+    color: #eb9605;
+}
+
+/* contact page */
+
+.contact-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-container h2{
+    font-size: 3rem;
+}
+
+.contact-info {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+@media (max-width: 810px) {
+    .blurb-2 {
+        flex-direction: column;
+    }
+
+    .blurb-2-text {
+        padding: 1rem;
+    }
+    
+}

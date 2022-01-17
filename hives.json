@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "hive 1",
+        "price": 200,
+        "fillColor": "black"
+    },
+    {
+        "id": 2,
+        "name": "hive 2",
+        "price": 200,
+        "fillColor": "green"
+    },
+    {
+        "id": 3,
+        "name": "hive 3",
+        "price": 200,
+        "fillColor": "purple"
+    },
+    {
+        "id": 4,
+        "name": "hive 4",
+        "price": 200,
+        "fillColor": "orange"
+    },
+    {
+        "id": 5,
+        "name": "hive 5",
+        "price": 200,
+        "fillColor": "limegreen"
+    },
+    {
+        "id": 6,
+        "name": "hive 6",
+        "price": 300,
+        "fillColor": "seagreen"
+    }
+]
